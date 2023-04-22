@@ -1,4 +1,5 @@
 <?php
+// Start a new session
 session_start();
 ?>
 <!DOCTYPE html>
@@ -15,7 +16,7 @@ session_start();
 <header>
     <nav>
         <div>
-            
+            <!-- Create the main menu -->
             <ul class="menu-main">
                 <li><a href="index.php">HOME</a></li>
                 <li><a href="#">PRODUCTS</a></li>
@@ -23,27 +24,29 @@ session_start();
                 <li><a href="#">MEMBER</a></li>
             </ul>
         </div>
+        <!-- Create the member menu -->
         <ul class="menu-member">
-             <?php
-                if (isset($_SESSION["useruid"])) {
-                    ?>
-                    <li><a href="#"><?php echo $_SESSION["useruid"]; ?></a></li>
-                    <li><a href="includes/logout.inc.php">LOGOUT</a></li>
-                    <?php
-                    }
-                    else {
-                        ?>
-
-            <li><a href="#">SIGN UP</a></li>
-            <li><a href="#" class="header-login-a">LOGIN</a></li>
+            <?php
+            // Check if the user is logged in
+            if (isset($_SESSION["useruid"])) {
+            ?>
+                <!-- Show the user's username and a logout link -->
+                <li><a href="#"><?php echo $_SESSION["useruid"]; ?></a></li>
+                <li><a href="includes/logout.inc.php">LOGOUT</a></li>
+            <?php
+            } else {
+            ?>
+                <!-- Show the sign-up and login links -->
+                <li><a href="#">SIGN UP</a></li>
+                <li><a href="#" class="header-login-a">LOGIN</a></li>
             <?php
             }
             ?>
-        
         </ul>
     </nav>
 </header>
 
+<!-- Create the intro section -->
 <section class="index-intro">
     <div class="index-intro-bg">
         <div class="wrapper">
@@ -59,11 +62,13 @@ session_start();
     </div>
 </section>
 
+<!-- Create the login section -->
 <section class="index-login">
     <div class="wrapper">
         <div class="index-login-signup">
             <h4>SIGN UP</h4>
             <p>Don't have an account? Sign up here!</p>
+            <!-- Create the sign-up form -->
             <form action="includes/signup.inc.php" method="post">
                 <input type="text" name="uid" placeholder="Username">
                 <input type="text" name="email" placeholder="E-mail">
@@ -76,6 +81,7 @@ session_start();
         <div class="index-login-login">
             <h4>LOGIN</h4>
             <p>Already have an account? Login here!</p>
+            <!-- Create the login form -->
             <form action="includes/login.inc.php" method="post">
                 <input type="text" name="uid" placeholder="Username">
                 <input type="password" name="pwd" placeholder="Password">
@@ -83,7 +89,10 @@ session_start();
                 <button type="submit" name="submit">LOGIN</button>
             </form>
         </div>
-    </div>
+    </div
+
 </section>
 </body>
 </html>
+<!-- 
+The entire code consists of an HTML document with a header containing the main menu and member menu, an intro section, and a login section with both sign-up and login forms. -->
