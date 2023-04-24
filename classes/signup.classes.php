@@ -47,6 +47,26 @@ class Signup extends Dbh {
         // Return the result check
         return $resultCheck;
     }
+
+    protected function getUserId($uid){
+        $stmt = $this->connect()->prepare('SELECT users_id FROM users WHERE users_uid = ?;');
+    
+        if(!$stmt->execute(array($uid))){   
+            $stmt = null;
+            header("location: profile.php?error=stmtfailed");
+            exit();
+        }
+        if($stmt->rowCount() == 0){
+            $stmt = null;
+            header("location: profile.php?error=profilenotfound");
+            exit();
+        }
+    
+        $profileData = $stmt->fetchAll(PDO::FETCH_ASSOC);
+   
+        return $profileData;
+    
+          }
 }
 
 // This code defines the Signup class, which extends the Dbh class. It has two protected methods: setUser and checkUser. The setUser method is responsible for inserting a new user's data into the database. It hashes the password and then executes a prepared statement to insert the data. The checkUser method checks whether a user with the given user id or email already exists in the database. It prepares and executes an SQL statement to search for a user with the given user id or email, and returns a boolean value based on whether a user is found or not.

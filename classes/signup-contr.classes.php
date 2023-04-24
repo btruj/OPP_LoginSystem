@@ -113,7 +113,19 @@ class SignupContr extends Signup {
         }
         return $result;
     }
+
+    public function fetchUserId($uid) {
+        $userId = $this->getUserId($uid);
+        return $userId[0]["users_id"];
+    }
 }    
 
 
-//This code defines the `SignupContr` class, which extends the `Signup` class. It has private properties for user id, password, password repeat, and email. The class provides methods for validating user input and registering new users. The `signupUser` method is the main method that performs all checks and calls the `setUser` method to register a new user if all the input is valid. The class has additional private methods for checking various aspects of user input such as empty fields, invalid user id, invalid email, password mismatch, and user id or email availability.
+//This code defines the `SignupContr` class, which extends the `Signup` class. 
+// It has private properties for user id, password, password repeat, and email. 
+// The class provides methods for validating user input and registering new users. 
+// The `signupUser` method is the main method that performs all checks and calls 
+// the `setUser` method to register a new user if all the input is valid. 
+// The class has additional private methods for checking various aspects of 
+// user input such as empty fields, invalid user id, invalid email, password mismatch,
+//  and user id or email availability.

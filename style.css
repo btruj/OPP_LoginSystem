@@ -24,28 +24,24 @@ a:hover {
     color: #f9c91d;
 }
 
-
-
 h3 {
     font-size: 24px;
     font-weight: bold;
     margin-right: 50px;
-    
 }
 
 h4 {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color:#333;
+    margin: 20px 0;
+    color: #333;
 }
 
 p {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
-    color:#333;
+    color: #333;
 }
 
 /* Header Styles */
@@ -59,12 +55,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -82,7 +80,6 @@ nav ul li:last-child {
     padding: 5px;
     border-radius: 5px;
     transition: all 0.3s ease;
-    
 }
 
 .menu-main a:hover {
@@ -126,6 +123,14 @@ nav ul li:last-child {
     align-items: center;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
 .index-intro-c1 {
     width: 50%;
     padding: 0 50px;
@@ -146,62 +151,62 @@ nav ul li:last-child {
 }
 
 .index-intro-c2 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .index-intro-c2 h2 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 1.3;
-  }
-  
-  .index-intro-c2 a {
-    background-color: #f9c91d;
-    color: #333;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 10px 30px;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-  }
-  
-  .index-intro-c2 a:hover {
-    background-color: #333;
-    color: #f9c91d;
-  }
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
 
-  /* Index Login Styles */
+.index-intro-c2 h2 {
+font-size: 30px;
+font-weight: bold;
+margin-bottom: 20px;
+text-transform: uppercase;
+letter-spacing: 5px;
+line-height: 1.3;
+}
+
+.index-intro-c2 a {
+background-color: #f9c91d;
+color: #333;
+font-size: 12px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 3px;
+padding: 10px 30px;
+border-radius: 50px;
+transition: all 0.3s ease;
+}
+
+.index-intro-c2 a:hover {
+background-color: #333;
+color: #f9c91d;
+}
+/* Index Login Styles */
 .index-login {
     background-color: #f5f5f5;
     padding: 100px 0;
     display: flex;
     justify-content: center;
-}
-
-.index-login-signup {
+    flex-wrap: wrap;
+    }
+    
+    .index-login-signup {
     width: 50%;
     margin-right: 50px;
-}
-
-.index-login-signup form input {
+    }
+    
+    .index-login-signup form input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: none;
     background-color: #fff;
-}
-
-.index-login-signup button {
+    }
+    
+    .index-login-signup button {
     display: block;
     width: 100%;
     background-color: #f9c91d;
@@ -214,27 +219,27 @@ nav ul li:last-child {
     letter-spacing: 1px;
     border-radius: 5px;
     transition: all 0.3s ease;
-}
-
-.index-login-signup button:hover {
+    }
+    
+    .index-login-signup button:hover {
     background-color: #333;
     color: #f9c91d;
-}
-
-.index-login-login {
+    }
+    
+    .index-login-login {
     width: 50%;
     padding-top: 40px;
-}
-
-.index-login-login form input {
+    }
+    
+    .index-login-login form input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: none;
     background-color: #fff;
-}
-
-.index-login-login button {
+    }
+    
+    .index-login-login button {
     display: block;
     width: 100%;
     background-color: #f9c91d;
@@ -247,127 +252,235 @@ nav ul li:last-child {
     letter-spacing: 1px;
     border-radius: 5px;
     transition: all 0.3s ease;
-}
-
-.index-login-login button:hover {
+    }
+    
+    .index-login-login button:hover {
     background-color: #333;
     color: #f9c91d;
-}
-
-  
-@media screen and (min-width: 768px) {
-    /* Header Styles */
-    nav ul li {
-      margin-right: 20px;
     }
-  
-    /* Index Intro Styles */
-    .index-intro-c1 {
-      width: 50%;
-    }
-  
-    .index-intro-c2 {
-      width: 50%;
-      margin-top: 0;
-    }
-  
-    .index-intro-c2 h2 {
-      font-size: 30px;
-    }
-  
-    .index-intro-c2 a {
-      font-size: 12px;
-      padding: 10px 30px;
-    }
-  
-    /* Index Login Styles */
-    .index-login-signup,
-    .index-login-login {
-      width: 50%;
-      margin-bottom: 0;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    /* Header Styles */
+    
+    @media screen and (max-width: 767px) {
     nav ul li {
     margin-right: 10px;
     }
-    
-    /* Index Intro Styles */
     .index-intro {
-    height: auto;
-    flex-direction: column;
+        height: auto;
+        flex-direction: column;
     }
     
-    .index-intro-c1 {
-    width: 100%;
-    padding: 0 20px;
+    .index-intro-c1,
+    .index-intro-c2 {
+        width: 100%;
+        padding: 0 20px;
     }
     
     .index-intro-c2 {
-    width: 100%;
-    margin-top: 20px;
+        margin-top: 20px;
     }
     
     .index-intro-c2 h2 {
-    font-size: 24px;
+        font-size: 24px;
     }
     
     .index-intro-c2 a {
-    font-size: 14px;
-    padding: 8px 20px;
+        font-size: 14px;
+        padding: 8px 20px;
     }
     
-    /* Index Login Styles */
-    .index-login-signup,
-    .index-login-login {
-    width: 100%;
-    margin-bottom: 20px;
-    }
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-      }
-      
-      nav ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      
-      nav ul li {
-        margin-bottom: 10px;
-      }
-      
-      .menu-main {
-        display: flex;
-        flex-direction: column;
-      }
-      
-      .menu-main a {
-        font-size: 16px;
-        padding: 5px;
-        border-radius: 5px;
-      }
-      
-      .menu-member {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-      }
-      
-      .menu-member li {
-        margin-right: 10px;
-      }
-      
-      .header-login-a {
-        margin-top: 10px;
-        padding: 5px;
-        border-radius: 5px;
-      }
-      
-    }
+    .index
+    .login-signup,
+.index-login-login {
+width: 100%;
+margin-bottom: 20px;
+}
+
+nav {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+nav ul li {
+margin-bottom: 10px;
+}
+
+.menu-main {
+display: flex;
+flex-direction: column;
+}
+
+.menu-main a {
+font-size: 16px;
+padding: 5px;
+border-radius: 5px;
+}
+
+.menu-member {
+margin-top: 10px;
+display: flex;
+flex-direction: row;
+}
+
+.menu-member li {
+margin-right: 10px;
+}
+
+.header-login-a {
+margin-top: 10px;
+padding: 5px;
+border-radius: 5px;
+}
+}
+           /* Profile Section Styles */
+           .profile {
+            padding: 50px 0;
+          }
+          
+          .profile-bg {
+            background-color: #333;
+            padding: 30px;
+          }
+          
+          .profile-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+          }
+          
+          .profile-info-img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          .profile-info-img p {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          
+          .profile-info-img .break {
+            width: 100px;
+            height: 2px;
+            background-color: #f9c91d;
+            margin-bottom: 10px;
+          }
+          
+          .profile-info-about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          .profile-info-about h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          
+          .follow-btn {
+            background-color: #f9c91d;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+          }
+          
+          .follow-btn:hover {
+            background-color: #333;
+            color: #f9c91d;
+          }
+          
+          .profile-content {
+            display: flex;
+            flex-direction: column;
+          }
+          
+          .profile-intro,
+          .profile-posts {
+            margin-bottom: 20px;
+          }
+          
+          .profile-intro h3,
+          .profile-posts h3 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          
+          .profile-intro p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: #f5f5f5;
+          }
+          
+          .profile-post {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin-bottom: 10px;
+          }
+          
+          .profile-post h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          
+          .profile-post p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            color: #f5f5f5;
+          }
+          
+          /* Add some more responsive styles */
+          @media screen and (max-width: 1024px) {
+            .profile-info-about {
+              justify-content: center;
+            }
+          }
+          
+          @media screen and (max-width: 768px) {
+            .wrapper {
+              flex-direction: column;
+              width: 100%;
+            }
+            .profile-info {
+              flex-direction: column;
+            }
+            .profile-info-img {
+              margin-bottom: 20px;
+            }
+            .profile-info-about {
+              width: 100%;
+            }
+          }
+          
+          @media screen and (max-width: 480px) {
+            .profile-info-img p {
+              font-size: 28px;
+            }
+          
+            .profile-info-about h3 {
+              font-size: 20px;
+            }
+          
+            .profile-intro h3,
+            .profile-posts h3 {
+              font-size: 24px;
+            }
+          
+            .profile-post h2 {
+              font-size: 20px;
+            }
+          }

@@ -25,4 +25,6 @@ class Dbh {
         }
     }
 }
-// This code defines a class called Dbh which is responsible for connecting to the database. The connect() method establishes the connection using the PDO class and the provided credentials. In case of an error during the connection, the error message is printed, and the script is terminated.
+// This code defines a class called Dbh which is responsible for connecting to the database. 
+//The connect() method establishes the connection using the PDO class and the provided credentials. 
+//In case of an error during the connection, the error message is printed, and the script is terminated.

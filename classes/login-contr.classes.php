@@ -44,4 +44,10 @@ class loginContr extends Login {
     }
 }
 
-//This code defines a loginContr class that extends the Login class. The class has two private properties, $uid and $pwd, which are assigned values when the object is instantiated. The loginUser method is responsible for logging in the user. It first checks if the user id and password are empty using the emptyInput method. If either input is empty, the user is redirected to the index page with an error message. If both inputs are not empty, the getUser method from the Login class is called to authenticate the user. The emptyInput method is a private method that checks if the user id and password are empty and returns a boolean result.
+//This code defines a loginContr class that extends the Login class. 
+// The class has two private properties, $uid and $pwd, which are assigned values when the object is instantiated.
+// the loginUser method is responsible for logging in the user. It first checks if the user id and password are 
+//empty using the emptyInput method. If either input is empty, the user is redirected to the index page with an 
+//error message. If both inputs are not empty, the getUser method from the Login class is called to authenticate
+//the user. The emptyInput method is a private method that checks if the user id and password are empty and 
+//returns a boolean result.
