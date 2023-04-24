@@ -37,13 +37,6 @@ h4 {
     color: #333;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    color: #333;
-}
-
 /* Header Styles */
 header {
     background-color: #1e1e1e;
@@ -225,10 +218,23 @@ color: #f9c91d;
     background-color: #333;
     color: #f9c91d;
     }
+
+    .index-login-signup p{
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: #333; 
+    }
     
     .index-login-login {
     width: 50%;
     padding-top: 40px;
+    }
+    .index-login-login p{
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: #333; 
     }
     
     .index-login-login form input {
@@ -385,7 +391,15 @@ border-radius: 5px;
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 10px;
+            margin-left: 30px;
           }
+
+          .profile-info-about p{
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: #f5f5f5; 
+        }
           
           .follow-btn {
             background-color: #f9c91d;
@@ -484,3 +498,54 @@ border-radius: 5px;
               font-size: 20px;
             }
           }
+          
+          .profile-settings {
+            background-color: #333;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+          }
+          
+          .profile-settings h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #f5f5f5;
+          }
+          
+          .profile-settings p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: #f5f5f5;
+          }
+          
+          .profile-settings textarea,
+          .profile-settings input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            background-color: #f5f5f5;
+            color: #333;
+          }
+          
+          .profile-settings button {
+            background-color: #f9c91d;
+            border: none;
+            color: #333;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 0.3s;
+          }
+          
+          .profile-settings button:hover {
+            background-color: #333;
+            color: #f9c91d;
+          }
+          

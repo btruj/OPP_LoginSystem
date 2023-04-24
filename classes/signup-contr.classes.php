@@ -114,10 +114,15 @@ class SignupContr extends Signup {
         return $result;
     }
 
-    public function fetchUserId($uid) {
-        $userId = $this->getUserId($uid);
-        return $userId[0]["users_id"];
-    }
+// Define a public function called 'fetchUserId' that takes a single argument: '$uid'
+public function fetchUserId($uid) {
+    // Call the 'getUserId' method with the provided '$uid' and store the result in '$userId'
+    $userId = $this->getUserId($uid);
+
+    // Return the value of the 'users_id' column from the first row of the '$userId' array
+    return $userId[0]["users_id"];
+}
+
 }    
 
 
@@ -129,3 +134,7 @@ class SignupContr extends Signup {
 // The class has additional private methods for checking various aspects of 
 // user input such as empty fields, invalid user id, invalid email, password mismatch,
 //  and user id or email availability.
+//This public function, 'fetchUserId', takes a single argument, '$uid', and retrieves 
+//the user ID for the specified user. It does this by calling the 'getUserId' method with 
+//the provided '$uid' and storing the result in the '$userId' variable. The function then 
+//returns the value of the 'users_id' column from the first row of the '$userId' array.
